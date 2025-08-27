@@ -66,6 +66,7 @@ A versioning system is therefore required that aligns with **sprint cadence**, e
 
 ## Examples
 
+- `v8.2420.3` → 8th sprint release, 2024 week 20 (mid-May), 3rd baseline, shared across all domains.  
 - `v8.2420.3+fe.5` → 8th sprint release, 2024 week 20 (mid-May), 3rd baseline, frontend-specific 5th release.  
 - `v8.2420.3+an.5` → 8th sprint release, 2024 week 20 (mid-May), 3rd baseline, Android-specific 5th release.  
 - `v15.2602.1+ios.1` → 15th sprint release, 2026 week 2 (January), 1st baseline, iOS-specific 1st release.  

@@ -11,7 +11,7 @@ This scheme, adapted from [SemVer](https://github.com/semver/semver) and [HeadVe
 - Enable teams to maintain a consistent versioning rhythm aligned with **two-week sprint cycles**.  
 - Enable version strings to embed **week-based temporal information** so that release timing is immediately clear.  
 - Enable independent releases for **Frontend, Backend, and Android** in a shared monorepo environment.  
-- Reduce overhead from versioning debates and help teams focus on **delivering value to end-users**.
+- Enable teams to reduce overhead from versioning debates and focus on **delivering value to end-users**.
 
 ## Non-Goals
 
@@ -30,12 +30,9 @@ Conventional versioning practices often disrupt this process — introducing amb
 - *“Did a Frontend-only change trigger a Backend tag?”*  
 - *“Did we forget to update the tag before shipping?”*
 
-Such uncertainties hinder coordination in a **shared monorepo** that includes Frontend, Backend, and Android courses.  
-A single version stream cannot capture the **independent release flows** of these courses, leading to confusion and redundant tags.  
-Manual tagging further increases the risk of errors, as omissions or inconsistencies can silently propagate into release history.
+Such uncertainties hinder coordination in a **shared monorepo** that includes Frontend, Backend, and Android courses. A single version stream cannot capture the **independent release flows** of these courses, leading to confusion and redundant tags. Manual tagging further increases the risk of errors, as omissions or inconsistencies can silently propagate into release history.
 
-A versioning system is therefore required that aligns with **sprint cadence**, encodes **temporal context**, supports **course-level independence**, and minimizes **human error through automation**.  
-This ensures that releases remain both meaningful and traceable in practice.
+A versioning system is therefore required that aligns with **sprint cadence**, encodes **temporal context**, supports **course-level independence**, and minimizes **human error through automation**. This ensures that releases remain both meaningful and traceable in practice.
 
 ## Description
 
@@ -78,44 +75,36 @@ This ensures that releases remain both meaningful and traceable in practice.
 
 **Q1. The `{sprint}` number is getting too large. Isn’t 99 a bit excessive?**  
 
-A: `{sprint}` is not your age — it’s just your sprint counter. If it’s at 99, that means the team has delivered value to end-users 99 times.  
-In **Woowacourse**, that’s not excessive — that’s proof of consistent effort and something to be proud of.  
+A: `{sprint}` is not your age — it’s just your sprint counter. If it’s at 99, that means the team has delivered value to end-users 99 times. In **Woowacourse**, that’s not excessive — that’s proof of consistent effort and something to be proud of.  
 
 **Q2. Do I really need to care about `{baseline}`?**  
 
-A: Yes, at least a little. `{baseline}` is the team’s common checkpoint — the marker that says *“we’re all on the same page.”*  
-If one teammate is debugging yesterday’s build while another is talking about today’s, confusion is guaranteed. Baseline keeps everyone aligned.  
+A: Yes, at least a little. `{baseline}` is the team’s common checkpoint — the marker that says *“we’re all on the same page.”* If one teammate is debugging yesterday’s build while another is talking about today’s, confusion is guaranteed. Baseline keeps everyone aligned.  
 
 **Q3. Isn’t `{course.build}` optional?**  
 
 A: On paper, it looks optional — but in a monorepo, it rarely is.  
-Frontend, Backend, and Android courses often move at different speeds. `{course.build}` helps separate those flows so one course’s release doesn’t accidentally affect another’s.  
-Think of it less as “optional” and more as a practical habit.  
+Frontend, Backend, and Android courses often move at different speeds. `{course.build}` helps separate those flows so one course’s release doesn’t accidentally affect another’s. Think of it less as “optional” and more as a practical habit.  
 
 **Q4. Can we add suffixes like `-alpha`, `-beta`, or `-rc`?**  
 
-A: You could, but in **Woowacourse**, every sprint release is already treated as a kind of real-world test with end-users.  
-Adding extra suffixes usually adds complexity without much gain. Just bump `{sprint}` and keep the rhythm simple.  
+A: You could, but in **Woowacourse**, every sprint release is already treated as a kind of real-world test with end-users. Adding extra suffixes usually adds complexity without much gain. Just bump `{sprint}` and keep the rhythm simple.  
 
 **Q5. What if we forget to tag a release?**  
 
-A: With automation, that shouldn’t happen. But if it ever does, the real problem isn’t the missing tag — it’s the confusion that follows:  
-*“Wait, which version did we deploy yesterday?”* Automation is the easiest way to avoid those messy Slack threads.  
+A: With automation, that shouldn’t happen. But if it ever does, the real problem isn’t the missing tag — it’s the confusion that follows: *“Wait, which version did we deploy yesterday?”* Automation is the easiest way to avoid those messy Slack threads.  
 
 **Q6. Why is Android marked as `an` in the version string, instead of `aos`?**  
 
 A: The Android folks at **Woowacourse**, who really love their craft, aren’t fond of the term `aos`. It’s not official and often causes confusion.  
-That’s why we use `an` instead — short, clean, and consistent with the other abbreviations (`fe`, `be`).  
-Of course, if the team prefers, you can just write out `android`. What matters isn’t rigid rules, but keeping things consistent within the team.  
+That’s why we use `an` instead — short, clean, and consistent with the other abbreviations (`fe`, `be`). Of course, if the team prefers, you can just write out `android`. What matters isn’t rigid rules, but keeping things consistent within the team.  
 
 **Q7. Can this versioning system be used outside of Woowacourse as well?**  
 
-A: Absolutely. While it was designed with **Woowacourse** projects in mind, it’s not limited to them.  
-Anyone can adopt it as-is or adapt it for their own context. Think of it as a recipe you can follow or tweak, not a rigid standard.  
+A: Absolutely. While it was designed with **Woowacourse** projects in mind, it’s not limited to them. Anyone can adopt it as-is or adapt it for their own context. Think of it as a recipe you can follow or tweak, not a rigid standard.  
 
 ## Acknowledgments
 
 - This specification was inspired by [SemVer](https://github.com/semver/semver) — sincere thanks.  
 - It also benefited from the ideas and approach of [HeadVer](https://github.com/line/headver) — deep gratitude.  
-- Thanks as well to the peers from [Woowacourse 7th generation](https://www.woowacourse.io/).  
-  The activities and learning shared together played a big part in shaping this document — and the FAQ having seven questions is a small shout-out to the 7th gen.
+- Thanks as well to the peers from [Woowacourse 7th generation](https://www.woowacourse.io/). The activities and learning shared together played a big part in shaping this document — and the FAQ having seven questions is a small shout-out to the 7th gen.

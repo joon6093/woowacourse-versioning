@@ -96,8 +96,7 @@ A: With automation, that shouldn’t happen. But if it ever does, the real probl
 
 **Q6. Why is Android marked as `an` in the version string, instead of `aos`?**  
 
-A: The Android folks at **Woowacourse**, who really love their craft, aren’t fond of the term `aos`. It’s not official and often causes confusion.  
-That’s why we use `an` instead — short, clean, and consistent with the other abbreviations (`fe`, `be`). Of course, if the team prefers, you can just write out `android`. What matters isn’t rigid rules, but keeping things consistent within the team.  
+A: The Android folks at **Woowacourse**, who really love their craft, aren’t fond of the term `aos`. It’s not official and often causes confusion. That’s why we use `an` instead — short, clean, and consistent with the other abbreviations (`fe`, `be`). Of course, if the team prefers, you can just write out `android`. What matters isn’t rigid rules, but keeping things consistent within the team.  
 
 **Q7. Can this versioning system be used outside of Woowacourse as well?**  
 

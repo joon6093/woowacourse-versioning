@@ -11,7 +11,6 @@ This scheme, adapted from [SemVer](https://github.com/semver/semver) and [HeadVe
 - Enable teams to maintain a consistent versioning rhythm aligned with **two-week sprint cycles**.  
 - Enable version strings to embed **week-based temporal information** so that release timing is immediately clear.  
 - Enable independent releases for **Frontend, Backend, and Android** in a shared monorepo environment.  
-- Enable teams to reduce overhead from versioning debates and focus on **delivering value to end-users**.
 
 ## Non-Goals
 

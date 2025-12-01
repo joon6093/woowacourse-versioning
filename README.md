@@ -82,8 +82,7 @@ A: Yes, at least a little. `{baseline}` is the team’s common checkpoint — th
 
 **Q3. Isn’t `{course.build}` optional?**  
 
-A: On paper, it looks optional — but in a monorepo, it rarely is.  
-Frontend, Backend, and Android courses often move at different speeds. `{course.build}` helps separate those flows so one course’s release doesn’t accidentally affect another’s. Think of it less as “optional” and more as a practical habit.  
+A: On paper, it looks optional — but in a monorepo, it rarely is. Frontend, Backend, and Android courses often move at different speeds. `{course.build}` helps separate those flows so one course’s release doesn’t accidentally affect another’s. Think of it less as “optional” and more as a practical habit.  
 
 **Q4. Can we add suffixes like `-alpha`, `-beta`, or `-rc`?**  
 
